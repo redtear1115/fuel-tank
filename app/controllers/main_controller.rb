@@ -43,6 +43,6 @@ class MainController < ApplicationController
   end
 
   def data_path
-    Rails.root.join("storage/#{@event_key}.csv")
+    @data_path ||= Rails.root.join("storage/#{@event_key}.csv")
   end
 end

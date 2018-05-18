@@ -1,24 +1,23 @@
 # README
+  Save data from chatfuel json api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby version
 
-Things you may want to cover:
+    ruby '2.5.1'
 
-* Ruby version
+## Rails version
 
-* System dependencies
+    gem 'rails', '~> 5.2.0'
 
-* Configuration
+## No Model (Database)
+  file all saved in /storage/.
 
-* Database creation
+## APIs
+### GET /event-key
+  get a hex code from server
 
-* Database initialization
+### POST /save-data/:event_key
+  put this string in your chatfuel json api url
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### GET /download-data/:event_key
+  download the newest report while you need
